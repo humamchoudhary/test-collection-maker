@@ -1,0 +1,44 @@
+ok so i have to create all the endpoints in a api cli based app, it stores datalike this: 
+
+name: FunctionName
+method: POST
+url: $LOCAL_BASE_URL/bins/listing
+body:
+  content: |-
+    {
+        "search": {
+            "value": "",
+            "regex": false
+        },
+        "page_number": 1,
+        "page_size": 10,
+        "filters": {
+            "name": "",
+            "from": 0,
+            "to": 100,
+            "active": -1,
+            "sort": "d",
+            "column": "fill"
+        }
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json
+
+
+it saves data like this for more info you can check the about the api gateway: https://posting.sh/guide/ what is better to use a script which will go throught the files and look for the endpoints and the input payload, or using LLM like claude code?
+
+change the body too i will provide you file with all the files with their 50 lines that should contain most of the data,
+the files should be created like this:
+if the dir path is
+bins/add.js
+the collection folder sohuld have this:
+bins/add.posting.yaml 
+the function name would be: Bins Add
+rest you are intellegent engough
+this si the data 
