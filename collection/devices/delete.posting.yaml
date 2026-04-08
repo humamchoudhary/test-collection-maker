@@ -1,0 +1,10 @@
+name: Devices Delete
+method: POST
+url: $LOCAL_BASE_URL/devices/remove_from_admin
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

@@ -1,0 +1,18 @@
+name: Locations Bins_locations_controller
+method: POST
+url: $LOCAL_BASE_URL/locations/assign/bins/manager/
+body:
+  content: |-
+    {
+        "bin_ids": "",
+        "location_id": "",
+        "company_id": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

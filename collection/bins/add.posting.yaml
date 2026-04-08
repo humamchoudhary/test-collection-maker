@@ -1,0 +1,30 @@
+name: Bins Add
+method: POST
+url: $LOCAL_BASE_URL/bins/
+body:
+  content: |-
+    {
+        "name": "",
+        "lat": "",
+        "lng": "",
+        "region": "",
+        "variant": "",
+        "variant_id": "",
+        "unique_random_number": "",
+        "address": "",
+        "bins/add.js-30- bin_height": "",
+        "base_length": "",
+        "base_width": "",
+        "bin_image": "",
+        "zone_id": "",
+        "use_smoothing": "",
+        "smoothing_pickup_level": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

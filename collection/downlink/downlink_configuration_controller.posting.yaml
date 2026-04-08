@@ -1,0 +1,18 @@
+name: Downlink Downlink_configuration_controller
+method: POST
+url: $LOCAL_BASE_URL/downlink/intervals
+body:
+  content: |-
+    {
+        "downlink_configuration_id": "",
+        "page_number = 1": "",
+        "page_size = 10": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

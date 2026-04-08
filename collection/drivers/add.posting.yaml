@@ -1,0 +1,22 @@
+name: Drivers Add
+method: POST
+url: $LOCAL_BASE_URL/drivers/
+body:
+  content: |-
+    {
+        "name": "",
+        "email": "",
+        "address": "",
+        "contact_number": "",
+        "image": "",
+        "vehicle_id": "",
+        "pin": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

@@ -1,0 +1,10 @@
+name: Auth Permissions Delete
+method: DELETE
+url: $LOCAL_BASE_URL/auth/permissions/:id
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

@@ -1,0 +1,25 @@
+name: Zones List
+method: POST
+url: $LOCAL_BASE_URL/zones/listing
+body:
+  content: |-
+    {
+        "page_number": 1,
+        "page_size": 10,
+        "filters": {
+            "name": "",
+            "from": 0,
+            "to": 100,
+            "active": -1,
+            "sort": "d",
+            "column": "fill"
+        }
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

@@ -1,0 +1,21 @@
+name: Subscriptions Payment
+method: POST
+url: $LOCAL_BASE_URL/subscriptions/create-payment
+body:
+  content: |-
+    {
+        "subscription_id": "",
+        "number_of_devices": "",
+        "voucher": "",
+        "subscription_type": "",
+        "total_amount": "",
+        "vat_tax": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

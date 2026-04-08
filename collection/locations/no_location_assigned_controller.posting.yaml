@@ -1,0 +1,6 @@
+name: Locations No_location_assigned_controller
+method: POST
+url: $LOCAL_BASE_URL
+headers:
+- name: content-type
+  value: application/json

@@ -1,0 +1,16 @@
+name: Auth Login
+method: POST
+url: $LOCAL_BASE_URL/auth/token/
+body:
+  content: |-
+    {
+        "se_account_id": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

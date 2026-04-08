@@ -1,0 +1,18 @@
+name: Companies Fetch_report_data
+method: POST
+url: $LOCAL_BASE_URL/companies/fetch_report_data
+body:
+  content: |-
+    {
+        "companies": "",
+        "start": "",
+        "end": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

@@ -1,0 +1,6 @@
+name: Decoder Index
+method: GET
+url: $LOCAL_BASE_URL/decoder/tilt/:hash
+headers:
+- name: content-type
+  value: application/json

@@ -1,0 +1,16 @@
+name: Auth Roles Add
+method: POST
+url: $LOCAL_BASE_URL/auth/roles
+body:
+  content: |-
+    {
+        "name": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

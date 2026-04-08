@@ -1,0 +1,13 @@
+name: Users Validate_token
+method: POST
+url: $LOCAL_BASE_URL/users/validate_token/
+body:
+  content: |-
+    {
+        "email": "",
+        "token": ""
+    }
+  content_type: application/json
+headers:
+- name: content-type
+  value: application/json

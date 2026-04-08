@@ -1,0 +1,10 @@
+name: Routes Update
+method: PUT
+url: $LOCAL_BASE_URL/routes/:id
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

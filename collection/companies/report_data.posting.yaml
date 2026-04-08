@@ -1,0 +1,16 @@
+name: Companies Report_data
+method: POST
+url: $LOCAL_BASE_URL/companies/report_data
+body:
+  content: |-
+    {
+        "days": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

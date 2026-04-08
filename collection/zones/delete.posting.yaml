@@ -1,0 +1,10 @@
+name: Zones Delete
+method: DELETE
+url: $LOCAL_BASE_URL/zones/delete/:zone_id
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

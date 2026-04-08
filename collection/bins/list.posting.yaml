@@ -1,0 +1,16 @@
+name: Bins List
+method: POST
+url: $LOCAL_BASE_URL/bins/list
+body:
+  content: |-
+    {
+        "customerId": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

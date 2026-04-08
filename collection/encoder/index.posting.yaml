@@ -1,0 +1,6 @@
+name: Encoder Index
+method: POST
+url: $LOCAL_BASE_URL/encoder/
+headers:
+- name: content-type
+  value: application/json

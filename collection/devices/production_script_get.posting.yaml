@@ -1,0 +1,6 @@
+name: Devices Production_script_get
+method: GET
+url: $LOCAL_BASE_URL/devices/csv
+headers:
+- name: content-type
+  value: application/json

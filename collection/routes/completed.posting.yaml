@@ -1,0 +1,17 @@
+name: Routes Completed
+method: POST
+url: $LOCAL_BASE_URL/routes/completed/
+body:
+  content: |-
+    {
+        "route_id": "",
+        "status": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

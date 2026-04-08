@@ -1,0 +1,6 @@
+name: Users Unlock_users
+method: GET
+url: $LOCAL_BASE_URL/users/unlock_users
+headers:
+- name: content-type
+  value: application/json

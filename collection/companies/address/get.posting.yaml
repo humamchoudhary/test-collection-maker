@@ -1,0 +1,16 @@
+name: Companies Address Get
+method: POST
+url: $LOCAL_BASE_URL/companies/address/get
+body:
+  content: |-
+    {
+        "group_id": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

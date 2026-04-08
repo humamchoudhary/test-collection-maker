@@ -1,0 +1,10 @@
+name: Vehicles Update
+method: POST
+url: $LOCAL_BASE_URL/vehicles/routing
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

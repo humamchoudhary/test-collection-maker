@@ -1,0 +1,17 @@
+name: Locations Location_time_series_controller
+method: POST
+url: $LOCAL_BASE_URL/locations/timeseries
+body:
+  content: |-
+    {
+        "location_id": "",
+        "date": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

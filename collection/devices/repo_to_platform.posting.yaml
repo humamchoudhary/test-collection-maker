@@ -1,0 +1,18 @@
+name: Devices Repo_to_platform
+method: POST
+url: $LOCAL_BASE_URL/devices/repo_to_platform
+body:
+  content: |-
+    {
+        "customer_id": "",
+        "devices": "",
+        "details": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

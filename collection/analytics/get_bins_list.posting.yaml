@@ -1,0 +1,10 @@
+name: Analytics Get_bins_list
+method: GET
+url: $LOCAL_BASE_URL/analytics/get_bins_list
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

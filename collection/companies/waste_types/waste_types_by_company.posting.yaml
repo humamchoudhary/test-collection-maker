@@ -1,0 +1,16 @@
+name: Companies Waste_types Waste_types_by_company
+method: POST
+url: $LOCAL_BASE_URL/companies/waste_types_by_company
+body:
+  content: |-
+    {
+        "company_id": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

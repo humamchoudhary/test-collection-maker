@@ -1,0 +1,25 @@
+name: Devices Listing
+method: POST
+url: $LOCAL_BASE_URL/devices/expo
+body:
+  content: |-
+    {
+        "filters": {
+            "name": "",
+            "from": 0,
+            "to": 100,
+            "active": -1,
+            "sort": "d",
+            "column": "fill"
+        },
+        "type": "",
+        "customer_id": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

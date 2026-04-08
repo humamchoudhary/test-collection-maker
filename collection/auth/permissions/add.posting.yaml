@@ -1,0 +1,18 @@
+name: Auth Permissions Add
+method: POST
+url: $LOCAL_BASE_URL/auth/permissions
+body:
+  content: |-
+    {
+        "feature_id": "",
+        "name": "",
+        "action": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

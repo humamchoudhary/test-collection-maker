@@ -1,0 +1,6 @@
+name: Transformation Index
+method: POST
+url: $LOCAL_BASE_URL/pre-processing
+headers:
+- name: content-type
+  value: application/json

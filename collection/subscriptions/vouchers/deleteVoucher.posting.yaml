@@ -1,0 +1,10 @@
+name: Subscriptions Vouchers Deletevoucher
+method: DELETE
+url: $LOCAL_BASE_URL/subscriptions/voucher/:id
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

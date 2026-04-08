@@ -1,0 +1,23 @@
+name: Devices Kpi Send_devices
+method: POST
+url: $LOCAL_BASE_URL/devices/send_to_kpi
+body:
+  content: |-
+    {
+        "variant_id": "",
+        "address_id": "",
+        "weight_per_commodity": "",
+        "bin_capacity": "",
+        "bin_type": "",
+        "perc_threshold": "",
+        "abs_threshold": "",
+        "min_fill_level": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

@@ -1,0 +1,24 @@
+name: Webhooks Add
+method: POST
+url: $LOCAL_BASE_URL/webhooks/
+body:
+  content: |-
+    {
+        "name": "",
+        "url": "",
+        "se_account_id": "",
+        "api_key": "",
+        "api_key_header": "",
+        "is_decoded": "",
+        "is_custom_payload": "",
+        "payload": "",
+        "sensor_types_id": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

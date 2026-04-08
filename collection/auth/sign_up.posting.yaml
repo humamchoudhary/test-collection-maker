@@ -1,0 +1,31 @@
+name: Auth Sign_up
+method: POST
+url: $LOCAL_BASE_URL/auth/sign_up
+body:
+  content: |-
+    {
+        "auth/sign_up.js-92- first_name": "",
+        "auth/sign_up.js-93- last_name": "",
+        "auth/sign_up.js-94- user_country": "",
+        "auth/sign_up.js-95- phone_number": "",
+        "auth/sign_up.js-96- email": "",
+        "auth/sign_up.js-97- company_name": "",
+        "auth/sign_up.js-98- vat_number": "",
+        "auth/sign_up.js-99- street_address": "",
+        "auth/sign_up.js-100- post_code": "",
+        "auth/sign_up.js-101- company_city": "",
+        "auth/sign_up.js-102- company_country": "",
+        "auth/sign_up.js-103- password": "",
+        "auth/sign_up.js-104- confirm_password": "",
+        "auth/sign_up.js-105- check_terms": "",
+        "auth/sign_up.js-106- link_company": "",
+        "auth/sign_up.js-107- parent_company_token auth/sign_up.js-108-": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

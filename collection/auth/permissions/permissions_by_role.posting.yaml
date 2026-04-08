@@ -1,0 +1,16 @@
+name: Auth Permissions Permissions_by_role
+method: POST
+url: $LOCAL_BASE_URL/auth/permissions_by_role
+body:
+  content: |-
+    {
+        "role_id": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

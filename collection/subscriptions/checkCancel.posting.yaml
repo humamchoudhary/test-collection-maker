@@ -1,0 +1,10 @@
+name: Subscriptions Checkcancel
+method: GET
+url: $LOCAL_BASE_URL/subscriptions/check-cancel
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

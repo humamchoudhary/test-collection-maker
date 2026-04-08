@@ -1,0 +1,10 @@
+name: Kpi Bin_analysis
+method: POST
+url: $LOCAL_BASE_URL/kpi/bin/detail
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

@@ -1,0 +1,10 @@
+name: Downlink Downlink_controller
+method: POST
+url: $LOCAL_BASE_URL/downlink/list
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json
