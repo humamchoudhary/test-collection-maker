@@ -1,0 +1,18 @@
+name: Reports Add
+method: POST
+url: $LOCAL_BASE_URL/reports/
+body:
+  content: |-
+    {
+        "variant_id": "",
+        "issue_type": "",
+        "description": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

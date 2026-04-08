@@ -1,0 +1,25 @@
+name: Routes Schedule
+method: POST
+url: $LOCAL_BASE_URL/routes/schedule
+body:
+  content: |-
+    {
+        "routes/schedule.js-30- se_account_id": "",
+        "routes/schedule.js-31- enable_dynamic_routing": "",
+        "routes/schedule.js-32- start_date": "",
+        "routes/schedule.js-33- end_date": "",
+        "routes/schedule.js-34- route_starting_time": "",
+        "routes/schedule.js-35- repetition_type": "",
+        "routes/schedule.js-36- fill_level_threshold": "",
+        "but may be used for event detail routes/schedule.js-37- repeat_unit": "",
+        "routes/schedule.js-38- repeat_on_days": "",
+        "routes/schedule.js-39- timezone routes/schedule.js-40-": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

@@ -1,0 +1,10 @@
+name: Locations Locations_controller
+method: DELETE
+url: $LOCAL_BASE_URL/locations/manager/:id
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

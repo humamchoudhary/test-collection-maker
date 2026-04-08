@@ -1,0 +1,21 @@
+name: Ota Add
+method: POST
+url: $LOCAL_BASE_URL/ota/add
+body:
+  content: |-
+    {
+        "sensor_type": "",
+        "firmware_version": "",
+        "hardware_version": "",
+        "xml_version": "",
+        "ota_downlink": "",
+        "variant_ids": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

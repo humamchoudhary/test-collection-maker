@@ -1,0 +1,10 @@
+name: Companies Address_detail
+method: GET
+url: $LOCAL_BASE_URL/companies/address_detail/:se_account_id
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

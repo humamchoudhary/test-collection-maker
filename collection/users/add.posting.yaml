@@ -1,0 +1,22 @@
+name: Users Add
+method: POST
+url: $LOCAL_BASE_URL/users/trackzone
+body:
+  content: |-
+    {
+        "name": "",
+        "email": "",
+        "phone_number": "",
+        "address": "",
+        "country": "",
+        "password": "",
+        "role_id": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

@@ -1,0 +1,6 @@
+name: Devices Csv_decoder
+method: POST
+url: $LOCAL_BASE_URL/devices/decoder/
+headers:
+- name: content-type
+  value: application/json

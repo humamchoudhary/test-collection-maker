@@ -1,0 +1,10 @@
+name: Bins Events_overview
+method: GET
+url: $LOCAL_BASE_URL/bins/events
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

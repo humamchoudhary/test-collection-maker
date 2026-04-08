@@ -1,0 +1,10 @@
+name: Subscriptions Details
+method: GET
+url: $LOCAL_BASE_URL/subscriptions/details/:id
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

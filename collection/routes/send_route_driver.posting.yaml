@@ -1,0 +1,17 @@
+name: Routes Send_route_driver
+method: POST
+url: $LOCAL_BASE_URL/routes/send_route_driver/
+body:
+  content: |-
+    {
+        "driver_id": "",
+        "route_id": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

@@ -1,0 +1,10 @@
+name: Bins Listing_waste_type
+method: GET
+url: $LOCAL_BASE_URL/bins/company/wastetypes/
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

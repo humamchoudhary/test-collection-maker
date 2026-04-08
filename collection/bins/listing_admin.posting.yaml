@@ -1,0 +1,27 @@
+name: Bins Listing_admin
+method: POST
+url: $LOCAL_BASE_URL/bins/listing_admin
+body:
+  content: |-
+    {
+        "page_number": 1,
+        "page_size": 10,
+        "filters": {
+            "name": "",
+            "from": 0,
+            "to": 100,
+            "active": -1,
+            "sort": "d",
+            "column": "fill"
+        },
+        "type": "",
+        "customer_id": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

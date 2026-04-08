@@ -1,0 +1,10 @@
+name: Auth Roles Services_list
+method: GET
+url: $LOCAL_BASE_URL/auth/services/
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

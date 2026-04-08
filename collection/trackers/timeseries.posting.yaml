@@ -1,0 +1,18 @@
+name: Trackers Timeseries
+method: POST
+url: $LOCAL_BASE_URL/trackers/timeseries/v2
+body:
+  content: |-
+    {
+        "to": "",
+        "from": "",
+        "id": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

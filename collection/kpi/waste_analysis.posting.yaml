@@ -1,0 +1,10 @@
+name: Kpi Waste_analysis
+method: POST
+url: $LOCAL_BASE_URL/kpi/waste/detail
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

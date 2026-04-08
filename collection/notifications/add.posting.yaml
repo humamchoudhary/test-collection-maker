@@ -1,0 +1,37 @@
+name: Notifications Add
+method: POST
+url: $LOCAL_BASE_URL/notifications/
+body:
+  content: |-
+    {
+        "notifications/add.js-95- se_account_id": "",
+        "notifications/add.js-96- enable_temperature_notification": "",
+        "notifications/add.js-97- temperature_operator": "",
+        "notifications/add.js-98- temperature_value": "",
+        "notifications/add.js-99- enable_battery_notification": "",
+        "notifications/add.js-100- battery_operator": "",
+        "notifications/add.js-101- battery_value": "",
+        "notifications/add.js-102- enable_fill_notification": "",
+        "notifications/add.js-103- enable_minor_fill_level": "",
+        "notifications/add.js-104- minor_fill_value": "",
+        "notifications/add.js-105- enable_major_fill_level": "",
+        "notifications/add.js-106- major_fill_value": "",
+        "notifications/add.js-107- enable_critical_fill_level": "",
+        "notifications/add.js-108- critical_fill_value": "",
+        "notifications/add.js-109- enable_error_notification": "",
+        "notifications/add.js-110- enable_offline_notification": "",
+        "notifications/add.js-111- enable_fire_alarm": "",
+        "notifications/add.js-112- enable_fire_alarm_sms": "",
+        "notifications/add.js-113- enable_pickup_event": "",
+        "notifications/add.js-114- enable_pickup_event_sms": "",
+        "notifications/add.js-115- enable_temper_event": "",
+        "notifications/add.js-116- enable_temper_event_sms notifications/add.js-117-": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

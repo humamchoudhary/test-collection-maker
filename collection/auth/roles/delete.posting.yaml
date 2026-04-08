@@ -1,0 +1,10 @@
+name: Auth Roles Delete
+method: DELETE
+url: $LOCAL_BASE_URL/auth/roles/:id
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

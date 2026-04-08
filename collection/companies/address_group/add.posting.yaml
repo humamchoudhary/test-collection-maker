@@ -1,0 +1,17 @@
+name: Companies Address_group Add
+method: POST
+url: $LOCAL_BASE_URL/companies/add_address_group
+body:
+  content: |-
+    {
+        "group_name": "",
+        "se_account_id": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

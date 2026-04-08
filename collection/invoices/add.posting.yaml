@@ -1,0 +1,31 @@
+name: Invoices Add
+method: POST
+url: $LOCAL_BASE_URL/invoices/
+body:
+  content: |-
+    {
+        "se_account_id": "",
+        "currency": "",
+        "bank_number": "",
+        "po_number": "",
+        "invoice_date": "",
+        "due_date": "",
+        "delivery_date": "",
+        "json": "",
+        "content": "",
+        "price": "",
+        "po_placement": "",
+        "payable_at_delivery": "",
+        "structured_communication": "",
+        "ammount_received": "",
+        "ammount_payable": "",
+        "ammount_remaining": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

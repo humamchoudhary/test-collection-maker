@@ -1,0 +1,10 @@
+name: Devices Update_bin
+method: PUT
+url: $LOCAL_BASE_URL/devices/provision/:id
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

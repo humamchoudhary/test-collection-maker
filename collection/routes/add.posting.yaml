@@ -1,0 +1,22 @@
+name: Routes Add
+method: POST
+url: $LOCAL_BASE_URL/routes/company
+body:
+  content: |-
+    {
+        "maximum_route_time": "",
+        "maximum_slack_time": "",
+        "se_account_id": "",
+        "optimal_routing": "",
+        "routing_enabled": "",
+        "is_dynamic_route": "",
+        "is_matrices_calculation": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

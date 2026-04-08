@@ -1,0 +1,18 @@
+name: Locations Location_details_controller
+method: POST
+url: $LOCAL_BASE_URL/locations/details/frontend/
+body:
+  content: |-
+    {
+        "page_number": 1,
+        "page_size": 10,
+        "location_id": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

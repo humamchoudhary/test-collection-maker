@@ -1,0 +1,10 @@
+name: Auth Verify
+method: GET
+url: $LOCAL_BASE_URL/auth/verify/:token
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

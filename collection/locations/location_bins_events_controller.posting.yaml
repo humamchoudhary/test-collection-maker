@@ -1,0 +1,19 @@
+name: Locations Location_bins_events_controller
+method: POST
+url: $LOCAL_BASE_URL/locations/bins/events/frontend/
+body:
+  content: |-
+    {
+        "page_number": 1,
+        "page_size": 10,
+        "location_id": "",
+        "status": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

@@ -1,0 +1,10 @@
+name: Companies Waste_types List
+method: GET
+url: $LOCAL_BASE_URL/companies/waste_types/list
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

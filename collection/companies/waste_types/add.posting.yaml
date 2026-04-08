@@ -1,0 +1,17 @@
+name: Companies Waste_types Add
+method: POST
+url: $LOCAL_BASE_URL/companies/waste_types
+body:
+  content: |-
+    {
+        "name": "",
+        "icon": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

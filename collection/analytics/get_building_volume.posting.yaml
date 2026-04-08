@@ -1,0 +1,18 @@
+name: Analytics Get_building_volume
+method: POST
+url: $LOCAL_BASE_URL/analytics/get_building_volume
+body:
+  content: |-
+    {
+        "filter": "",
+        "bins_in_building": "",
+        "date_range": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

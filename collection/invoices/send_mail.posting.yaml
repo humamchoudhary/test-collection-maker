@@ -1,0 +1,6 @@
+name: Invoices Send_mail
+method: GET
+url: $LOCAL_BASE_URL/invoices/send_mail
+headers:
+- name: content-type
+  value: application/json

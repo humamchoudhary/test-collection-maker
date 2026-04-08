@@ -1,0 +1,19 @@
+name: Companies Address Add
+method: POST
+url: $LOCAL_BASE_URL/companies/add_address
+body:
+  content: |-
+    {
+        "address_name": "",
+        "group_id": "",
+        "lat": "",
+        "lng": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

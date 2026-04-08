@@ -1,0 +1,25 @@
+name: Devices Provision
+method: POST
+url: $LOCAL_BASE_URL/devices/provision
+body:
+  content: |-
+    {
+        "devices/provision.js-22- name": "",
+        "devices/provision.js-23- se_account_id": "",
+        "devices/provision.js-24- bin_height": "",
+        "devices/provision.js-25- lat": "",
+        "devices/provision.js-26- lng": "",
+        "devices/provision.js-27- address": "",
+        "devices/provision.js-28- serial_number": "",
+        "devices/provision.js-29- waste_type_id": "",
+        "devices/provision.js-30- offset_raw_distance": "",
+        "devices/provision.js-31-": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

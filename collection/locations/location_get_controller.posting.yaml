@@ -1,0 +1,10 @@
+name: Locations Location_get_controller
+method: GET
+url: $LOCAL_BASE_URL/locations/list/frontend/
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

@@ -1,0 +1,6 @@
+name: Users Validate
+method: GET
+url: $LOCAL_BASE_URL/users/validate
+headers:
+- name: content-type
+  value: application/json

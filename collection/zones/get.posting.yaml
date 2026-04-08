@@ -1,0 +1,10 @@
+name: Zones Get
+method: GET
+url: $LOCAL_BASE_URL/zones/list
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

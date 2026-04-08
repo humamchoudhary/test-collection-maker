@@ -1,0 +1,16 @@
+name: Downlinks Listing
+method: POST
+url: $LOCAL_BASE_URL/downlinks/listing_device
+body:
+  content: |-
+    {
+        "customer_id": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

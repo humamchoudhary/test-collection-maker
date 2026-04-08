@@ -1,0 +1,18 @@
+name: Vision Add
+method: POST
+url: $LOCAL_BASE_URL/vision/test
+body:
+  content: |-
+    {
+        "bin_id": "",
+        "image_base64": "",
+        "type": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

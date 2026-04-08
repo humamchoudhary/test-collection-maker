@@ -1,0 +1,19 @@
+name: Ota List
+method: POST
+url: $LOCAL_BASE_URL/ota/firmware/delete
+body:
+  content: |-
+    {
+        "sensor_type": "",
+        "firmware_version": "",
+        "hardware_version": "",
+        "xml_version": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

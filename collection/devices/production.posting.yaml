@@ -1,0 +1,6 @@
+name: Devices Production
+method: POST
+url: $LOCAL_BASE_URL/devices/production
+headers:
+- name: content-type
+  value: application/json

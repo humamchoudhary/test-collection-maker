@@ -1,0 +1,23 @@
+name: Users Security_configuration
+method: POST
+url: $LOCAL_BASE_URL/users/security_configurations
+body:
+  content: |-
+    {
+        "is_enabled": "",
+        "permanent_lockout": "",
+        "max_login_failures": "",
+        "wait_increment": "",
+        "quick_login_check": "",
+        "minimum_quick_login_wait": "",
+        "max_wait": "",
+        "failure_reset_time": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

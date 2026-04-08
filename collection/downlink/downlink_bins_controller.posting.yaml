@@ -1,0 +1,24 @@
+name: Downlink Downlink_bins_controller
+method: POST
+url: $LOCAL_BASE_URL/downlink/bins_list
+body:
+  content: |-
+    {
+        "downlink/downlink_bins_controller.js-118- page_number = 1": "",
+        "downlink/downlink_bins_controller.js-119- page_size = 10": "",
+        "downlink/downlink_bins_controller.js-120- waste_type": "",
+        "downlink/downlink_bins_controller.js-121- sensor_type": "",
+        "downlink/downlink_bins_controller.js-122- search": "",
+        "downlink/downlink_bins_controller.js-123- sort_field = \"id\"": "",
+        "downlink/downlink_bins_controller.js-124- sort_order = \"DESC\"": "",
+        "downlink/downlink_bins_controller.js-125- startDate = null": "",
+        "downlink/downlink_bins_controller.js-126- endDate = null downlink/downlink_bins_controller.js-127-": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json

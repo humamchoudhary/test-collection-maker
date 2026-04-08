@@ -1,0 +1,18 @@
+name: Subscriptions Listing
+method: POST
+url: $LOCAL_BASE_URL/subscriptions/listing
+body:
+  content: |-
+    {
+        "page_number": 1,
+        "page_size": 10,
+        "status": ""
+    }
+  content_type: application/json
+auth:
+  type: bearer_token
+  bearer_token:
+    token: $TOKEN
+headers:
+- name: content-type
+  value: application/json
